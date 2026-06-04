@@ -7,6 +7,6 @@ public class StartupDbContext : IdentityDbContext<User, IdentityRole<int>, int>
 {
     public StartupDbContext(DbContextOptions<StartupDbContext> options) : base(options) { }
         
-    public DbSet<Article> Users { get; set; }
-    public DbSet<Review> Lobbies { get; set; }
+    public DbSet<User> Users { get; set; }
+    public DbSet<Lobby> Lobbies { get; set; }
 }
